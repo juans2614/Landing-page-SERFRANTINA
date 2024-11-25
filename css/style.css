@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Berkshire+Swash&family=Cinzel:wght@400..900&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 html{
@@ -7,8 +7,8 @@ html{
 }
 
 :root{
-    --primary-color: #ff7e44;
-    --secondary-color: black;
+    --primary-color: #D56200;
+    --secondary-color:  #33363C;
 }
 
 *{
@@ -17,7 +17,7 @@ html{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: "Montserrat", serif;
+    font-family: "Cinzel", serif;
 }
 
 p,a,li,label,input{
@@ -31,7 +31,7 @@ header{
 }
 
 header nav{
-    background: white;
+    background: #f7f7f7;
     position: fixed;
     width: 100%;
     top: 0;
@@ -43,11 +43,12 @@ header nav{
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 #logo img {
-    max-width: 180px;  /* Adjust this value to your preferred size */
-    height: auto;      /* Maintains aspect ratio */
+    max-width: 180px;  
+    height: auto;      
 }
 
 .fila{
@@ -102,34 +103,40 @@ header #hero{
     color: white;
     font-size: 46px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 #hero p{
     color: white;
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 button{
     cursor: pointer;
     background: transparent;
+    padding: 10px 20px
 }
 
 #hero .btn-primary{
-    background: var(--primary-color);
+    background-image: linear-gradient(185deg, #D56200, gray);
     color: white;
     padding: 20px 40px;
     font-weight: 500;   
+    border-radius: 100px 0px;
 }
 
 #hero .btn-secondary{
-    color: var(--primary-color);
+    color: white;
     padding: 20px 40px;
     font-weight: 500;
-    text-decoration: underline;
-    background: transparent;
-    border: 0;
+    text-decoration: solid;
+    background-image: linear-gradient(185deg, #D56200, gray);
+    border-radius: 0px 50px;
+    margin-left: 940px;
 }
+
 
 /* Estilos main */
 
@@ -269,7 +276,7 @@ main #section1{
 }
 
 #section2{
-    background: #d9d9d9;
+    background-image: linear-gradient(180deg, #D56200, #33363C);;
     padding: 120px 0 210px;
     width: 100%;
     position: relative;
@@ -308,7 +315,7 @@ main #section1{
     width: 30%;
     max-width: 290px;
     padding: 50px;
-    box-shadow: 0px 4px 8px -5px #999999;
+    box-shadow: 13px 4px 8px -5px black;
     margin-top: 50px;
     border-bottom: 4px solid var(--primary-color);
     background: white;
@@ -417,11 +424,12 @@ main #section1{
 }
 
 #section3 .card-vertical button{
-    background: gray;
+    background: var(--primary-color);
     color: white;
     border: 0 transparent;
     padding: 14px 20px;
     font-size: 18px;
+    border-radius: 50px;
 }
 
 #section3 .card-vertical .info-card{
